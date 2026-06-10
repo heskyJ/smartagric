@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesky — Developer</title>
+  <meta name="description" content="Full-stack developer crafting elegant digital experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">YN<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-outline">Hire me</a>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-eyebrow">
+      <span class="status-dot"></span>
+      Available for work
+    </div>
+    <h1 class="hero-title">
+      <span class="line">Hesky</span>
+    </h1>
+    <p class="hero-sub">Full-Stack Developer</p>
+    <div class="hero-desc">
+      <p>I build fast, thoughtful software — from polished interfaces<br>to resilient backend systems.</p>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View my work</a>
+      <a href="#about" class="btn-ghost">About me ↓</a>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── TICKER ────────────────────────────────────────────── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>React</span><span class="sep">·</span>
+      <span>Node.js</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>TypeScript</span><span class="sep">·</span>
+      <span>PostgreSQL</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Next.js</span><span class="sep">·</span>
+      <span>React</span><span class="sep">·</span>
+      <span>Node.js</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>TypeScript</span><span class="sep">·</span>
+      <span>PostgreSQL</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Next.js</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <!-- Replace src with your actual photo -->
+            <img src="images/profile.jpg" alt="Hesky — Developer" class="about-img" />
+            <div class="image-accent" aria-hidden="true"></div>
+          </div>
+          <div class="about-stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years building</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="section-eyebrow">About me</p>
+          <h2 class="section-title">Turning ideas into<br><em>working software</em></h2>
+          <p class="about-text">
+            Hi, I'm <strong>Hesky</strong> — a full-stack developer based in Nairobi, Kenya.
+            I love the entire spectrum of development: designing clean APIs, architecting
+            databases, and crafting interfaces people actually enjoy using.
+          </p>
+          <p class="about-text">
+            When I'm not coding, you'll find me reading about systems design, contributing
+            to open-source, or teaching others how to build things on the web.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Open to remote</span>
+            <span class="tag">Freelance</span>
+            <span class="tag">Full-time</span>
+          </div>
+          <a href="resume.pdf" class="btn-primary" target="_blank">Download CV</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────────── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section-eyebrow center">What I work with</p>
+      <h2 class="section-title center">Skills & tools</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">&#123;&#125;</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>React / Next.js</li>
+            <li>TypeScript</li>
+            <li>CSS / Tailwind</li>
+            <li>GSAP / Framer Motion</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>Python / FastAPI</li>
+            <li>REST & GraphQL APIs</li>
+            <li>PostgreSQL / MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">☁</div>
+          <h3>DevOps & Cloud</h3>
+          <ul>
+            <li>AWS / GCP</li>
+            <li>Docker / Kubernetes</li>
+            <li>CI/CD Pipelines</li>
+            <li>Linux / Bash</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section-eyebrow">Selected work</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-list">
+
+        <article class="project-card" data-index="01">
+          <div class="project-meta">
+            <span class="project-tag">Full-stack</span>
+            <span class="project-tag">React</span>
+          </div>
+          <h3 class="project-title">Project One</h3>
+          <p class="project-desc">
+            This was my first ever project. Was still getting my hands on coding but the project turned out really amazing.
+            Be sure to check it out and let me know what you think! I built this using React and Node.js, and it helped me learn how to connect a frontend to a backend API.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link">Live site ↗</a>
+            <a href="#" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <div class="project-line" aria-hidden="true"></div>
+        </article>
+
+        <article class="project-card" data-index="02">
+          <div class="project-meta">
+            <span class="project-tag">Backend</span>
+            <span class="project-tag">Python</span>
+          </div>
+          <h3 class="project-title">Project Two</h3>
+          <p class="project-desc">
+            On this second project i built a system that helps users manage their tasks more efficiently.
+            In this world of tech, everything is about solving problems and this project was no different. I built this using Python and FastAPI, and it helped me learn how to design RESTful APIs and work with databases.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link">Live site ↗</a>
+            <a href="#" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <div class="project-line" aria-hidden="true"></div>
+        </article>
+
+        <article class="project-card" data-index="03">
+          <div class="project-meta">
+            <span class="project-tag">API</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <h3 class="project-title">Project Three</h3>
+          <p class="project-desc">
+            The other project I'm proud of was building a REST API using Node.js and Express. It helped me understand how to structure APIs and handle requests efficiently.
+             This API is used by a small app that helps users track their fitness goals. It was a great learning experience and I'm excited to build more complex APIs in the future.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link">Live site ↗</a>
+            <a href="#" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+          <div class="project-line" aria-hidden="true"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <p class="section-eyebrow center">Let's connect</p>
+      <h2 class="contact-title">Have a project<br>in <em>mind?</em></h2>
+      <p class="contact-sub">
+        I'm always open to interesting opportunities, collaborations,<br>
+        and conversations about tech.
+      </p>
+      <a href="mailto:heskyjuma@gmail.com" class="btn-primary btn-large">Say hello ↗</a>
+
+      <div class="social-links">
+        <a href="https://github.com/heskyJ" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/polo" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/_yourstrully1" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <p>© 2025 Hesky. Built with HTML, CSS & GSAP.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
